@@ -1,76 +1,99 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" data-lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ilya Faraz Pasargad Cooperative | شرکت تعاونی ایلیا فراز پاسارگاد</title>
-<style>
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-background-color: #ffffff;
-color: #333;
-}
-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #fff;
-border-bottom: 4px solid #f1b400;
-padding: 20px 40px;
-}
-.logo {
-display: flex;
-align-items: center;
-gap: 15px;
-}
-.logo img {
-width: 50px;
-height: 50px;
-}
-.logo h1 {
-font-size: 1.2rem;
-color: #333;
-}
-.logo p {
-font-size: 0.9rem;
-color: #666;
-margin: 0;
-}
-#lang-toggle {
-background-color: #f1b400;
-color: #fff;
-border: none;
-border-radius: 5px;
-padding: 8px 16px;
-cursor: pointer;
-font-weight: bold;
-}
-main {
-padding: 60px 40px;
-}
-section h2 {
-color: #f1b400;
-}
-footer {
-background-color: #333;
-color: #fff;
-padding: 20px 40px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-font-size: 0.9rem;
-}
-footer a {
-color: #f1b400;
-text-decoration: none;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilya Faraz Pasargad Cooperative | شرکت تعاونی ایلیا فراز پاسارگاد</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 <header>
-<div class="logo">
-<img src="B.jpg" alt="Ilya Faraz Pasargad Logo" />
-<div>
-<h1 id="title-en">Ilya Faraz Pasargad Cooperative</h1>
-<h1 id="title-fa" style="display:none;">شرکت تعاونی ایلیا فراز پاسارگاد</h1>
+  <div class="logo">
+    <img src="B.jpg" alt="Logo">
+    <div>
+      <h1 class="lang-en">Ilya Faraz Pasargad Cooperative</h1>
+      <h1 class="lang-fa" style="display:none;">شرکت تعاونی ایلیا فراز پاسارگاد</h1>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button id="lang-toggle" onclick="toggleLanguage()">فارسی</button>
+</header>
+
+<main>
+  <section class="lang-en">
+    <h2>Welcome to Ilya Faraz Pasargad Cooperative</h2>
+    <p>We are a Tehran-based engineering and cooperative development organization dedicated to sustainable design, construction, and project management excellence.</p>
+  </section>
+
+  <section class="lang-fa" style="display:none;">
+    <h2>به شرکت تعاونی ایلیا فراز پاسارگاد خوش آمدید</h2>
+    <p>ما سازمانی مهندسی و توسعه تعاونی در تهران هستیم که بر طراحی پایدار، ساخت و مدیریت پروژه تمرکز دارد.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="lang-en">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <i class="fa-solid fa-cogs service-icon"></i>
+        <h3>Engineering Design</h3>
+        <p>Comprehensive civil and structural design services for cooperative and infrastructure development.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-hard-hat service-icon"></i>
+        <h3>Construction</h3>
+        <p>Implementation of sustainable and resilient building projects across Iran.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-tasks service-icon"></i>
+        <h3>Project Management</h3>
+        <p>Efficient coordination and supervision of multidisciplinary projects to ensure quality outcomes.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-lightbulb service-icon"></i>
+        <h3>Consultation</h3>
+        <p>Strategic advisory and feasibility assessment for cooperative ventures.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lang-fa" style="display:none; direction:rtl;">
+    <h2>خدمات ما</h2>
+    <div class="services">
+      <div class="service-box">
+        <i class="fa-solid fa-cogs service-icon"></i>
+        <h3>طراحی مهندسی</h3>
+        <p>ارائه خدمات جامع طراحی سازه و عمران برای توسعه زیرساخت‌ها و پروژه‌های تعاونی.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-hard-hat service-icon"></i>
+        <h3>ساخت و اجرا</h3>
+        <p>اجرای پروژه‌های مقاوم و پایدار در سراسر ایران.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-tasks service-icon"></i>
+        <h3>مدیریت پروژه</h3>
+        <p>نظارت و هماهنگی مؤثر در پروژه‌های چندرشته‌ای برای موفقیت کامل.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-lightbulb service-icon"></i>
+        <h3>مشاوره</h3>
+        <p>مشاوره راهبردی و ارزیابی امکان‌سنجی برای رشد طرح‌های تعاونی.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Ilya Faraz Pasargad Cooperative | تمامی حقوق محفوظ است</p>
+</footer>
+</body>
+</html>
+
