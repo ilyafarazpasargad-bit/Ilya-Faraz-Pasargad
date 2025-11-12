@@ -30,58 +30,29 @@
     <section class="lang-en">
       <h2>Our Services</h2>
       <div class="services">
-        <div class="service-box">
-          <i class="fa-solid fa-cogs service-icon"></i>
-          <h3>Engineering Design</h3>
-          <p>Comprehensive civil and structural design services for cooperative and infrastructure development.</p>
-        </div>
-        <div class="service-box">
-          <i class="fa-solid fa-hard-hat service-icon"></i>
-          <h3>Construction</h3>
-          <p>Implementation of sustainable and resilient building projects across Iran.</p>
-        </div>
-        <div class="service-box">
-          <i class="fa-solid fa-tasks service-icon"></i>
-          <h3>Project Management</h3>
-          <p>Efficient coordination and supervision of multidisciplinary projects to ensure quality outcomes.</p>
-        </div>
-        <div class="service-box">
-          <i class="fa-solid fa-lightbulb service-icon"></i>
-          <h3>Consultation</h3>
-          <p>Strategic advisory and feasibility assessment for cooperative ventures.</p>
-        </div>
+        <div class="service-box"><i class="fa-solid fa-cogs service-icon"></i><h3>Engineering Design</h3><p>Comprehensive civil and structural design services for cooperative and infrastructure development.</p></div>
+        <div class="service-box"><i class="fa-solid fa-hard-hat service-icon"></i><h3>Construction</h3><p>Implementation of sustainable and resilient building projects across Iran.</p></div>
+        <div class="service-box"><i class="fa-solid fa-tasks service-icon"></i><h3>Project Management</h3><p>Efficient coordination and supervision of multidisciplinary projects to ensure quality outcomes.</p></div>
+        <div class="service-box"><i class="fa-solid fa-lightbulb service-icon"></i><h3>Consultation</h3><p>Strategic advisory and feasibility assessment for cooperative ventures.</p></div>
       </div>
     </section>
 
     <section class="lang-fa" style="display:none; direction:rtl;">
       <h2>خدمات ما</h2>
       <div class="services">
-        <div class="service-box">
-          <i class="fa-solid fa-cogs service-icon"></i>
-          <h3>طراحی مهندسی</h3>
-          <p>ارائه خدمات جامع طراحی سازه و عمران برای توسعه زیرساخت‌ها و پروژه‌های تعاونی.</p>
-        </div>
-        <div class="service-box">
-          <i class="fa-solid fa-hard-hat service-icon"></i>
-          <h3>ساخت و اجرا</h3>
-          <p>اجرای پروژه‌های مقاوم و پایدار در سراسر ایران.</p>
-        </div>
-        <div class="service-box">
-          <i class="fa-solid fa-tasks service-icon"></i>
-          <h3>مدیریت پروژه</h3>
-          <p>نظارت و هماهنگی مؤثر در پروژه‌های چندرشته‌ای برای موفقیت کامل.</p>
-        </div>
-        <div class="service-box">
-          <i class="fa-solid fa-lightbulb service-icon"></i>
-          <h3>مشاوره</h3>
-          <p>مشاوره راهبردی و ارزیابی امکان‌سنجی برای رشد طرح‌های تعاونی.</p>
-        </div>
+        <div class="service-box"><i class="fa-solid fa-cogs service-icon"></i><h3>طراحی مهندسی</h3><p>ارائه خدمات جامع طراحی سازه و عمران برای توسعه زیرساخت‌ها و پروژه‌های تعاونی.</p></div>
+        <div class="service-box"><i class="fa-solid fa-hard-hat service-icon"></i><h3>ساخت و اجرا</h3><p>اجرای پروژه‌های مقاوم و پایدار در سراسر ایران.</p></div>
+        <div class="service-box"><i class="fa-solid fa-tasks service-icon"></i><h3>مدیریت پروژه</h3><p>نظارت و هماهنگی مؤثر در پروژه‌های چندرشته‌ای برای موفقیت کامل.</p></div>
+        <div class="service-box"><i class="fa-solid fa-lightbulb service-icon"></i><h3>مشاوره</h3><p>مشاوره راهبردی و ارزیابی امکان‌سنجی برای رشد طرح‌های تعاونی.</p></div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Ilya Faraz Pasargad Cooperative | تمامی حقوق محفوظ است</p>
-  </footer>
+  <div id="footer"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
 </body>
 </html>
