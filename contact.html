@@ -3,41 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Ilya Faraz Pasargad Cooperative | شرکت تعاونی ایلیا فراز پاسارگاد</title>
+  <title>Contact | Ilya Faraz Pasargad Cooperative</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
-<header> ...same header... </header>
-<main>
-  <section class="lang-en">
-    <h2>Contact Us</h2>
-    <p>Address: No. 762, next to Bank Tejarat, after Ayatollah Kashani St., Eslamshahr, Tehran, Iran</p>
-    <p>Phone: 099128093270</p>
-    <form name="contact" method="POST" data-netlify="true">
-      <label>Name</label><input type="text" name="name" required>
-      <label>Email</label><input type="email" name="email" required>
-      <label>Message</label><textarea name="message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <iframe src="https://www.google.com/maps?q=Eslamshahr,+Tehran,+Iran&output=embed" width="100%" height="300" style="border:0; margin-top:20px;"></iframe>
-  </section>
+  <div id="header"></div>
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
 
-  <section class="lang-fa" style="display:none; direction:rtl;">
-    <h2>تماس با ما</h2>
-    <p>آدرس: تهران، اسلامشهر، بعد از آیت‌الله کاشانی، جنب بانک تجارت، پلاک ۷۶۲</p>
-    <p>تلفن: ۰۹۹۱۲۸۰۹۳۲۷۰</p>
-    <form name="contact-fa" method="POST" data-netlify="true">
-      <label>نام</label><input type="text" name="name" required>
-      <label>ایمیل</label><input type="email" name="email" required>
-      <label>پیام</label><textarea name="message" required></textarea>
-      <button type="submit">ارسال</button>
-    </form>
-    <iframe src="https://www.google.com/maps?q=Eslamshahr,+Tehran,+Iran&output=embed" width="100%" height="300" style="border:0; margin-top:20px;"></iframe>
-  </section>
-</main>
-<footer>
-  <p>&copy; 2025 Ilya Faraz Pasargad Cooperative | تمامی حقوق محفوظ است</p>
-</footer>
+  <main>
+    <section class="lang-en">
+      <h2>Contact Us</h2>
+      <p>Address: No. 762, next to Bank Tejarat, after Ayatollah Kashani St., Eslamshahr, Tehran, Iran</p>
+      <p>Phone: 099128093270</p>
+      <form name="contact" method="POST" data-netlify="true">
+        <label>Name</label><input type="text" name="name" required>
+        <label>Email</label><input type="email" name="email" required>
+        <label>Message</label><textarea name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section class="lang-fa" style="display:none; direction:rtl;">
+      <h2>تماس با ما</h2>
+      <p>آدرس: تهران، اسلامشهر، بعد از آیت‌الله کاشانی، جنب بانک تجارت، پلاک ۷۶۲</p>
+      <p>تلفن: ۰۹۹۱۲۸۰۹۳۲۷۰</p>
+      <form name="contact-fa" method="POST" data-netlify="true">
+        <label>نام</label><input type="text" name="name" required>
+        <label>ایمیل</label><input type="email" name="email" required>
+        <label>پیام</label><textarea name="message" required></textarea>
+        <button type="submit">ارسال</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ilya Faraz Pasargad Cooperative | تمامی حقوق محفوظ است</p>
+  </footer>
 </body>
 </html>
